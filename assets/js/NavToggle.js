@@ -40,8 +40,10 @@ scrollLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
 
         // reset default to navigate to a specific spot
+        if (link.textContent === "Play a game") {
+            return;
+        }
         e.preventDefault();
-
         // initialize variables using href of clicked target
         const id = e.currentTarget.getAttribute("href").slice(1);
         const element = document.getElementById(id);
@@ -58,9 +60,9 @@ scrollLinks.forEach((link) => {
         let position = element.offsetTop - navHeight;
        
         // position if there is no fixed-nav before scrolling
-        if (!fixedNav) {
-            position -= navHeight;
-        }
+        // if (!fixedNav) {
+        //     position -= navHeight;
+        // }
         // check to see if menu is pulled down and adjust position accordingly
         if (navHeight > 88) {
             position += containerHeight;
