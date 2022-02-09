@@ -29,12 +29,16 @@ Variables
     --yellow-3: #e8e58d;
     --yellow-4: #e1dc67;
     --yellow-5: #d9d341;
+    --yellow-6: #928f2f;
+    --yellow-7: #4b4911;
     
     --green-1: #c2f8c7;
     --green-2: #8cdda1;
     --green-3: #2bb442;
     --green-4: #3a8544;
     --green-5: #1c611a;
+    --green-6: #144712;
+    --green-7: #0c2b0a;
 
     --red-1: #f7bebd;
     --red-2: #f28e8c;
@@ -154,7 +158,6 @@ img {
   color: var(--white);
   background: var(--black);
   transform: scale(1.2);
-  border: 2px solid var(--grey-1);
 }
 /*
 =============== 

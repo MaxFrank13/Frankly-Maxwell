@@ -15,6 +15,7 @@ nav {
   background: var(--primary-1);
   color: var(--grey-9);
   z-index: 2;
+  transition: var(--transition);
 }
 .nav-header {
   display: flex;
@@ -51,18 +52,20 @@ nav {
   font-weight: 700;
 }
 .links li {
+  width: auto;
+  border-bottom: 2px solid var(--black);
   text-align: center;
   font-size: 1.65rem;
-  width: 40%;
-  border-bottom: 2px solid var(--black);
+  z-index: 2;
 }
 .links li:hover {
   background: linear-gradient(var(--grey-1), var(--secondary-1));
   border-radius: var(--borderRadius);
   transition: var(--transition);
+  border-bottom: 2px solid var(--grey-5);
 }
 
-/* Fixed Nav and Go-to-Top link */
+/* Fixed Nav */
 
 .fixed-nav {
   position: fixed;
@@ -72,29 +75,6 @@ nav {
   background: var(--primary-1);
   box-shadow: var(--shadow-2);
   z-index: 99;
-}
-.fixed-nav .btn {
-  border: 2px solid var(--tertiary-6);
-}
-.fixed-nav .btn:hover {
-  border: 2px solid var(--tertiary-3);
-}
-.top-link {
-  font-size: 1.25rem;
-  position: fixed;
-  bottom: 2rem;
-  right: 5%;
-  background: radial-gradient(circle at 20% 20%, var(--secondary-5), var(--secondary-9));
-  display: grid;
-  padding: 0.5rem;
-  border-radius: var(--borderRadius);
-  animation: pulse 4s ease-in-out infinite;
-  visibility: hidden;
-  z-index: -100;
-}
-.show-link {
-  visibility: visible;
-  z-index: 100;
 }
 
 /* Canvas */
@@ -170,20 +150,7 @@ nav {
   }
   .links {
     flex-direction: row;
-    justify-content: flex-end;
-    gap: 3rem;
-  }
-  .links li {
-    width: auto;
-  }
-  .links li:hover {
-    transition: var(--transition);
-    background: none;
-    border-bottom: 2px solid white;
-  }
-}
-@media screen and (min-width: 1024px) {
-  nav {
-    transition: var(--transition);
+    justify-content: center;
+    gap: 4rem;
   }
 }

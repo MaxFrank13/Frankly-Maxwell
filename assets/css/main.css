@@ -7,12 +7,12 @@ Main Content
 .page {
   display: flex;
   flex-direction: column;
-  /* height: 90vh; */
   padding: 1rem 0;
   background: var(--primary-9);
+  box-shadow: inset 0px 12px 15px -15px;
 }
 .page:nth-child(even) {
-  background: var(--green-5);
+  background: var(--green-6);
 }
 .page h2 {
   margin-bottom: var(--gap);
@@ -30,7 +30,7 @@ Main Content
   max-width: 900px;
   background: var(--grey-8);
   border-radius: 0.5rem;
-  box-shadow: 0px 0px 12px 6px var(--green-4), inset 0px 0px 14px 8px var(--grey-9);
+  box-shadow: 0px 0px 13px -2px var(--green-4), inset 0px 0px 14px 8px var(--grey-9);
   transition: var(--transition);
 }
 .about-content h2 {
@@ -71,27 +71,29 @@ Main Content
   gap: 1rem;
   padding: 1rem;
 }
+.skills-content h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
 .skills-content p {
   position: relative;
   max-width: 454px;
   padding: 1.5rem;
   background: var(--grey-7);
+  border-radius: 0.35rem;
   box-shadow: inset 0px 0px 4px 6px var(--grey-8);
-}
-.skills-content h3 {
-  margin-bottom: 1rem;
-  text-align: center;
 }
 .skills-list {
   display: flex;
   flex-direction: column;
   gap: var(--gap);
+  max-width: 454px;
+  padding: 1rem;
+  border-radius: 0.35rem;
   background: var(--grey-7);
   box-shadow: inset 0px 0px 4px 6px var(--grey-8);
-  padding: 1rem;
   line-height: 1.5;
   font-size: 1.2rem;
-  max-width: 454px;
 }
 .skills-list li:first-child {
   text-decoration: underline;
@@ -105,6 +107,29 @@ Main Content
   flex-direction: column;
   align-items: center;
 }
+
+/* Projects */
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin: 1rem;
+  background: var(--green-7);
+  border-radius: 0.35rem;
+  box-shadow: 0px 0px 13px -2px var(--green-4), inset 0px 0px 14px 8px var(--grey-9)
+}
+.project img {
+  margin: 1rem auto;
+  max-width: 45%;
+  border-radius: 0.65rem;
+  border: 2px solid var(--primary-9);
+}
+.project p {
+  max-width: 80%;
+}
+
 
 /*
 =============== 
