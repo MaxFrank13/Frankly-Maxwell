@@ -121,6 +121,7 @@ nav {
   gap: var(--gap);
 }
 .contact li {
+  width: 3rem;
   font-size: 3rem;
   transition: var(--transition);
 }
@@ -128,6 +129,7 @@ nav {
   transform: scale(1.25);
 }
 .contact a {
+  max-width: 30%;
   color: var(--yellow-3);
   transition: var(--transition);
 }
