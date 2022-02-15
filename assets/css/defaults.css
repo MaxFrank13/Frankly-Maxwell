@@ -91,7 +91,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-primary);
   background: var(--grey-1);
   color: var(--grey-1);
   line-height: 1.5;
@@ -120,11 +120,13 @@ h2 {
   font-size: 1.85rem;
 }
 h3 {
+  color: var(--grey-9);
   font-size: 1.6rem;
-
 }
 h4,
 p {
+  background: var(--primary-1);
+  color: var(--grey-9);
   letter-spacing: 0.1rem;
   font-size: 1rem;
 }
