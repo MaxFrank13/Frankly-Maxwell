@@ -12,9 +12,6 @@ Main Content
   background: var(--primary-9);
   box-shadow: inset 0px 12px 15px -15px;
 }
-.page:nth-child(even) {
-  background: var(--green-7);
-}
 .page h2 {
   margin-bottom: var(--gap);
   text-align: center;
@@ -27,11 +24,9 @@ Main Content
 
 .about-content {
   margin: 1rem 5%;
-  padding: 1rem;
   max-width: 900px;
-  background: var(--grey-8);
   border-radius: 0.5rem;
-  box-shadow: 0px 0px 13px -2px var(--green-4), inset 0px 0px 14px 8px var(--grey-9);
+  box-shadow: 0px 0px 5px 0px var(--yellow-6), inset 0px 0px 14px 8px #000;
   transition: var(--transition);
 }
 .about-content h2 {
@@ -40,14 +35,17 @@ Main Content
 .about-content p {
   position: relative;
   padding: 1.5rem;
-  background: var(--grey-7);
-  box-shadow: inset 0px 0px 4px 6px var(--grey-8);
+  box-shadow: inset 0px 0px 4px 6px var(--black);
 }
 .about-content a {
-  color: var(--primary-2);
+  color: var(--grey-6);
+  transition: var(--transition);
 }
 .about-content a:hover {
-  color: var(--primary-8);
+  border-radius: 10rem;
+  background: var(--primary-2);
+  padding: 0.12rem;
+  color: var(--primary-9);
 }
 
 .about-content img {
@@ -73,6 +71,7 @@ Main Content
   padding: 1rem;
 }
 .skills-content h3 {
+  color: var(--primary-1);
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -80,19 +79,20 @@ Main Content
   position: relative;
   max-width: 454px;
   padding: 1.5rem;
-  background: var(--grey-7);
   border-radius: 0.35rem;
-  box-shadow: inset 0px 0px 4px 6px var(--grey-8);
+  box-shadow: 0px 0px 5px 0px var(--yellow-6), inset 0px 0px 4px 6px #000;
+
 }
 .skills-list {
   display: flex;
   flex-direction: column;
   gap: var(--gap);
   max-width: 454px;
-  padding: 1rem;
+  padding: 1.5rem 2.2rem;
   border-radius: 0.35rem;
-  background: var(--grey-7);
-  box-shadow: inset 0px 0px 4px 6px var(--grey-8);
+  background: var(--primary-1);
+  color: var(--grey-9);
+  box-shadow:  0px 0px 5px 0px var(--yellow-6), inset 0px 0px 4px 6px #000;
   line-height: 1.5;
   font-size: 1.2rem;
 }
@@ -101,6 +101,7 @@ Main Content
 }
 .skills-list li:not(:first-child) {
   padding-left: 1rem;
+  line-height: 2;
 }
 .attributes,
 .professional {
@@ -124,9 +125,9 @@ Main Content
   margin: 1rem;
   padding: 2rem;
   max-width: 778px;
-  background: var(--primary-9);
+  background: var(--primary-1);
   border-radius: 0.35rem;
-  box-shadow: 0px 0px 13px -2px var(--green-4), inset 0px 0px 14px 8px var(--grey-9)
+  box-shadow: inset 0px 0px 8px 12px var(--primary-9);
 }
 .project img {
   margin: 1rem auto;

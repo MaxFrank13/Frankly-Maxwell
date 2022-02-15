@@ -123,6 +123,10 @@ nav {
   padding-top: var(--gap);
   padding-right: 2rem;
 }
+.contact p {
+  background: transparent;
+  color: var(--yellow-1);
+}
 .contact ul {
   display: flex;
   gap: var(--gap);
