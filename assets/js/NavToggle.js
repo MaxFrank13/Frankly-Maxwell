@@ -40,9 +40,6 @@ scrollLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
 
         // reset default to navigate to a specific spot
-        if (link.textContent === "Play a game") {
-            return;
-        }
         e.preventDefault();
         // initialize variables using href of clicked target
         const id = e.currentTarget.getAttribute("href").slice(1);
@@ -50,7 +47,7 @@ scrollLinks.forEach((link) => {
 
         // find heights of navbar and links container
         const navHeight = navbar.getBoundingClientRect().height;
-        console.log(navHeight);
+
         const containerHeight = linksContainer.getBoundingClientRect().height;
         
         // check if fixed-nav is on, returns true/false

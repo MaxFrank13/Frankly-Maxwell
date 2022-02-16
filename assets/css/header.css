@@ -110,11 +110,14 @@ nav {
   display: flex;
   gap: 1.5rem;
 }
-.banner-btns a:nth-child(2) {
-  background: var(--red-4);
+.jump:hover {
+  background: var(--primary-7);
 }
-.banner-btns a:nth-child(2):hover {
+.game {
   background: var(--red-5);
+}
+.game:hover {
+  background: var(--red-4);
 }
 .contact {
   display: flex;
