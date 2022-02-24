@@ -127,16 +127,20 @@ Main Content
   box-shadow: inset 0px 0px 8px 12px var(--primary-9);
 }
 .project img {
-  margin: 1rem auto;
+  margin: 0 auto;
   max-width: 45%;
   border-radius: 0.65rem;
   border: 2px solid var(--primary-9);
 }
 .project p {
+  margin-top: 0.5rem;
   max-width: 80%;
   text-align: center;
 }
-
+.project a:hover {
+  transform: scale(1.05);
+  color: var(--primary-6);
+}
 
 /*
 =============== 
